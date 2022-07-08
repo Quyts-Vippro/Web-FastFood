@@ -38,4 +38,12 @@ class HinhAnh extends Model
     {
         return $this->belongsTo(AnhBia::class);
     }
+    public function danhGia()
+    {
+        return $this->belongsTo(DanhGia::class);
+    }
+    public function maGiamGia()
+    {
+        return $this->belongsTo(MaGiamGia::class);
+    }
 }

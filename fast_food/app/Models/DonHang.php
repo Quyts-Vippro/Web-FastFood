@@ -46,4 +46,7 @@ class DonHang extends Model
     {
         return $this->belongsTo(DiemMuaHang::class, 'id');
     }
+    public function shipper(){
+        return $this->belongsTo(User::class);
+    }
 }
